@@ -7,6 +7,7 @@
 <div align="center">
 
 [![FlightOps AI](https://img.shields.io/badge/Live_API-FlightOps_AI-14B8A6?style=for-the-badge&logo=fastapi&logoColor=white)](https://flightops-ai-mu.vercel.app/docs)
+[![Data Reliability](https://img.shields.io/badge/Shipped-Data_Reliability_Lab-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://github.com/mitulpatel123/airline-data-reliability-lab)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Mitul_Patel-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mitulpatel12/)
 [![Virginia](https://img.shields.io/badge/Based_in-Virginia-111827?style=for-the-badge&logo=googlemaps&logoColor=22D3EE)](#)
 
@@ -18,30 +19,48 @@ I am an M.S. Information Technology student in Virginia, graduating in **April 2
 
 My 2027 focus is **software engineering, backend/platform, cloud, data engineering, and applied AI/ML**. Internship work authorization is coordinated through my university's CPT process and confirmed for each role before applying.
 
-## Shipped system: FlightOps AI
+## Shipped systems
 
-[FlightOps AI](https://github.com/mitulpatel123/flightops-ai) is an airline-operations intelligence API for retry-safe flight-event ingestion and explainable delay-risk signals.
+### FlightOps AI
+
+[FlightOps AI](https://github.com/mitulpatel123/flightops-ai) is an airline-operations intelligence API for retry-safe flight-event ingestion, explainable operational risk, and evaluated T-24h arrival-delay prediction.
 
 ```text
-flight event -> typed validation -> idempotent ingest -> risk engine -> API + metrics
+official BTS data -> chronological evaluation -> portable model -> versioned API
 ```
 
 | Proof | What is implemented |
 |---|---|
 | [Live API](https://flightops-ai-mu.vercel.app/docs) | Interactive OpenAPI documentation on Vercel |
 | Reliability | Idempotent ingestion, validation, health checks, and metrics |
-| Engineering | Automated tests, Docker, CI, architecture decisions, and versioned scoring |
-| ML milestone | Leakage-safe data contract, chronological evaluation plan, calibration, and error slices |
+| Engineering | Eight automated tests, Docker, CI, architecture decisions, and scoped production deployment |
+| Evaluated ML | 90,000 official BTS records; future-period test; ROC-AUC 0.640; PR-AUC 0.335; recall 0.748; Brier 0.176 |
+| Model integrity | Leakage-resistant T-24h contract, calibration, carrier/airport/time error slices, model card, and inspectable JSON inference |
 
 **Stack:** Python · FastAPI · Pydantic · SQL/SQLite · Docker · GitHub Actions · REST/OpenAPI · Vercel
 
-## What I am building next
+### Airline Data Reliability Lab
 
-1. **FlightOps trained-model milestone** - establish a reproducible baseline, calibration report, error slices, and model card before replacing the explainable rules engine.
-2. **Airline Data Reliability Lab** - an original streaming/batch pipeline for public U.S. flight data with schema contracts, data-quality SLOs, PostgreSQL, and operational metrics.
-3. **Retrieval Evaluation Service** - a document-retrieval API that compares dense and hybrid search with a published benchmark, latency, and failure analysis.
+[Airline Data Reliability Lab](https://github.com/mitulpatel123/airline-data-reliability-lab) is an observable, quality-gated airline batch pipeline that records what loaded, what failed, and why.
 
-These are build commitments, not finished-project claims. Source code, results, and live links will be added only when each milestone is reproducible.
+```text
+CSV -> schema + business checks -> quality gate -> facts or quarantine -> API + metrics + report
+```
+
+| Proof | What is implemented |
+|---|---|
+| Data quality | Required-schema checks, reason-coded row quarantine, and fail-closed batch thresholds |
+| Reliability | Deterministic fact keys make source retries idempotent; every run records its source SHA-256 |
+| PostgreSQL path | SQLAlchemy schema, PostgreSQL 16 Compose environment, run/check/fact/quarantine tables |
+| Verification | Seven tests, passing CI, FastAPI evidence endpoints, Prometheus metrics, and a generated report |
+
+**Stack:** Python · FastAPI · PostgreSQL · SQLAlchemy · Docker Compose · GitHub Actions · Prometheus
+
+## Current focus
+
+1. Turn the two shipped systems into tailored resume bullets and role-specific application evidence.
+2. Confirm CPT dates and limits with the university DSO before accepting or starting any internship.
+3. Add AWS/Terraform depth only after the application pipeline is active and tracked.
 
 ## Technical direction
 
@@ -60,9 +79,10 @@ These are build commitments, not finished-project claims. Source code, results, 
 ## Current signal
 
 ```yaml
-status: building_and_shipping
-flagship: flightops-ai
-current_milestone: trained-model evaluation
+status: internship_application_ready
+shipped_projects: 2
+flagship: flightops-ai-v0.2
+current_priority: tailored applications + targeted outreach
 target_roles:
   - software engineering
   - backend / platform engineering
