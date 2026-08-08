@@ -1,34 +1,77 @@
-# Hi, I'm Mitul Patel
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/profile-light.svg">
+  <img alt="Mitul Patel - cloud, backend, and applied AI engineer" src="./assets/profile-light.svg" width="100%">
+</picture>
 
-I'm an M.S. Information Technology student in Virginia, graduating in April 2027. I build cloud-ready backend and applied AI systems with an emphasis on reliability, explainability, and measurable engineering evidence.
+<div align="center">
 
-## Featured project
+[![FlightOps AI](https://img.shields.io/badge/Live_API-FlightOps_AI-14B8A6?style=for-the-badge&logo=fastapi&logoColor=white)](https://flightops-ai-mu.vercel.app/docs)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mitul_Patel-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mitulpatel12/)
+[![Virginia](https://img.shields.io/badge/Based_in-Virginia-111827?style=for-the-badge&logo=googlemaps&logoColor=22D3EE)](#)
 
-### [FlightOps AI](https://github.com/mitulpatel123/flightops-ai)
+</div>
 
-An airline-operations intelligence API that ingests retry-safe flight events and produces explainable delay-risk signals.
+## Engineering profile
 
-- **Live demo:** [Interactive FastAPI documentation](https://flightops-ai-mu.vercel.app/docs)
-- **Stack:** Python, FastAPI, Pydantic, SQLite, Docker, GitHub Actions, Vercel
-- **Engineering evidence:** idempotent event ingestion, typed validation, versioned risk scoring, health and metrics endpoints, automated tests, architecture decisions, and CI
-- **Current milestone:** building a reproducible trained-model evaluation with leakage-safe splits, calibration, error slices, and a model card
+I am an M.S. Information Technology student in Virginia, graduating in **April 2027**. I build cloud-ready backend, data, and applied AI systems where the engineering evidence is visible: typed contracts, failure handling, tests, observability, evaluation, and documented tradeoffs.
 
-## What I'm focused on
+My 2027 focus is **software engineering, backend/platform, cloud, data engineering, and applied AI/ML**. Internship work authorization is coordinated through my university's CPT process and confirmed for each role before applying.
 
-- Backend and API engineering with Python, FastAPI, SQL, and Docker
-- Cloud and reliability fundamentals: CI/CD, observability, idempotency, failure handling, and infrastructure design
-- Applied AI/ML that includes baselines, evaluation, error analysis, and honest limitations
-- TypeScript and React for operational product interfaces
+## Shipped system: FlightOps AI
 
-## Current toolkit
+[FlightOps AI](https://github.com/mitulpatel123/flightops-ai) is an airline-operations intelligence API for retry-safe flight-event ingestion and explainable delay-risk signals.
 
-`Python` · `FastAPI` · `SQL` · `Docker` · `GitHub Actions` · `REST/OpenAPI` · `Pydantic` · `JavaScript` · `TypeScript` · `React`
+```text
+flight event -> typed validation -> idempotent ingest -> risk engine -> API + metrics
+```
 
-## 2027 opportunity focus
+| Proof | What is implemented |
+|---|---|
+| [Live API](https://flightops-ai-mu.vercel.app/docs) | Interactive OpenAPI documentation on Vercel |
+| Reliability | Idempotent ingestion, validation, health checks, and metrics |
+| Engineering | Automated tests, Docker, CI, architecture decisions, and versioned scoring |
+| ML milestone | Leakage-safe data contract, chronological evaluation plan, calibration, and error slices |
 
-I'm preparing for U.S. internships and entry-level roles in software engineering, backend/platform engineering, cloud engineering, data engineering, and applied AI/ML. Work authorization for internships is coordinated through my university's CPT process; role-specific eligibility is confirmed before applying.
+**Stack:** Python · FastAPI · Pydantic · SQL/SQLite · Docker · GitHub Actions · REST/OpenAPI · Vercel
 
-## Connect
+## What I am building next
 
-- [LinkedIn](https://www.linkedin.com/in/mitulpatel12/)
-- [FlightOps AI live API](https://flightops-ai-mu.vercel.app/docs)
+1. **FlightOps trained-model milestone** - establish a reproducible baseline, calibration report, error slices, and model card before replacing the explainable rules engine.
+2. **Airline Data Reliability Lab** - an original streaming/batch pipeline for public U.S. flight data with schema contracts, data-quality SLOs, PostgreSQL, and operational metrics.
+3. **Retrieval Evaluation Service** - a document-retrieval API that compares dense and hybrid search with a published benchmark, latency, and failure analysis.
+
+These are build commitments, not finished-project claims. Source code, results, and live links will be added only when each milestone is reproducible.
+
+## Technical direction
+
+| Systems | Data + AI | Delivery |
+|---|---|---|
+| Python, FastAPI, REST, SQL | Data contracts, baselines, evaluation | Docker, CI/CD, cloud deployment |
+| TypeScript, React | Retrieval, embeddings, model cards | Observability, failure handling, documentation |
+
+## Working principles
+
+- **Ship evidence, not keyword lists.** Every featured skill should point to code, tests, a live system, or measured results.
+- **Design for failure.** Retries, duplicate events, invalid inputs, degraded dependencies, and rollback paths are part of the product.
+- **Measure AI honestly.** Start with a baseline; report calibration, latency, errors, and limitations before claiming improvement.
+- **Keep provenance clear.** External projects are learning references or attributed forks—not cosmetically modified work presented as original.
+
+## Current signal
+
+```yaml
+status: building_and_shipping
+flagship: flightops-ai
+current_milestone: trained-model evaluation
+target_roles:
+  - software engineering
+  - backend / platform engineering
+  - cloud / data engineering
+  - applied AI / ML engineering
+```
+
+<div align="center">
+
+**Open to 2026-2027 U.S. internship conversations in cloud, backend, data, and applied AI.**
+
+</div>
